@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA&CY JEANS | Catálogo Exclusivo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosegold: '#B78A77',
+                        rosegoldDark: '#9A6F5D',
+                        denimLight: '#EAF0F6',
+                        denimDark: '#1E293B',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Textura de mezclilla sutil y elegante con CSS */
+        body {
+            background-color: #EAF0F6;
+            background-image: radial-gradient(#d4e2f0 0.75px, transparent 0.75px), radial-gradient(#d4e2f0 0.75px, #EAF0F6 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(183, 138, 119, 0.25);
+        }
+
+        .btn-boutique {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn-boutique:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(183, 138, 119, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col justify-between items-center py-8 px-4 selection:bg-rosegold selection:text-white">
+
+    <!-- Contenedor Principal Estilo Linktree Móvil -->
+    <main class="w-full max-w-md mx-auto flex flex-col items-center space-y-6 animate-fade-in">
+
+        <!-- Sello / Logotipo Circular Oficial MA&CY JEANS -->
+        <div class="relative flex flex-col items-center mt-4">
+            <div class="w-32 h-32 rounded-full glass-card p-2 flex flex-col items-center justify-center shadow-xl border-2 border-rosegold/50 relative overflow-hidden group">
+                <!-- Efecto brillo interno -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-rosegold/10 to-transparent pointer-events-none"></div>
+                
+                <!-- Contenido del Sello -->
+                <span class="text-[10px] tracking-[0.25em] font-semibold text-rosegoldDark uppercase mb-0.5">MA&CY</span>
+                <div class="font-serif font-bold text-3xl tracking-wider text-slate-900 my-0.5">MC</div>
+                <span class="text-[9px] tracking-[0.3em] font-medium text-slate-600 uppercase mt-0.5">JEANS</span>
+                
+                <div class="absolute w-full h-full border border-rosegold/30 rounded-full scale-90 pointer-events-none"></div>
+            </div>
+            
+            <h1 class="font-serif text-2xl font-bold tracking-wider text-slate-900 mt-4 text-center">MA&CY JEANS</h1>
+            <p class="text-xs tracking-widest text-rosegoldDark uppercase font-medium mt-1">Denim Exclusivo & Haute Couture</p>
+        </div>
+
+        <!-- Enlaces / Botones Interactivos -->
+        <div class="w-full space-y-4 px-2 mt-2">
+
+            <!-- 1. Botón WhatsApp Principal -->
+            <a href="https://wa.me/584147181188?text=Hola,%20deseo%20asesoría%20y%20consultar%20disponibilidad%20en%20MA&CY%20Jeans" target="_blank" 
+               class="btn-boutique w-full glass-card flex items-center justify-between p-4 rounded-xl shadow-sm hover:border-rosegold group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-semibold text-sm text-slate-900">Escríbenos al WhatsApp (Principal)</span>
+                        <span class="block text-[11px] text-slate-500">+58 414-7181188</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-rosegold"></i>
+            </a>
+
+            <!-- 1.1. Botón WhatsApp Secundario -->
+            <a href="https://wa.me/584121731737?text=Hola,%20me%20gustaría%20ver%20opciones%20disponibles%20en%20MA&CY%20Jeans" target="_blank" 
+               class="btn-boutique w-full glass-card flex items-center justify-between p-4 rounded-xl shadow-sm hover:border-rosegold group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-semibold text-sm text-slate-900">WhatsApp (Secundario)</span>
+                        <span class="block text-[11px] text-slate-500">+58 412-1731737</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-rosegold"></i>
+            </a>
+
+            <!-- 2. Botón Ver Catálogo Exclusivo (Abre Visor / Modal Interactivo) -->
+            <button onclick="openCatalogModal()" 
+               class="btn-boutique w-full bg-slate-900 text-white flex items-center justify-between p-4 rounded-xl shadow-md hover:bg-slate-800 group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-rosegold/20 flex items-center justify-center text-rosegold group-hover:bg-rosegold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-book-open text-base"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-semibold text-sm text-white">Ver Catálogo Exclusivo de Jeans</span>
+                        <span class="block text-[11px] text-slate-300">PopSugar & Most Wanted (Tallajes y Corridas)</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-rosegold"></i>
+            </button>
+
+            <!-- 3. Botón Instagram -->
+            <a href="https://www.instagram.com/macy.jeans?xtok=MTA1ampvNTdjZ2N6dw%3D%3D&utm_source=qr" target="_blank" 
+               class="btn-boutique w-full glass-card flex items-center justify-between p-4 rounded-xl shadow-sm hover:border-rosegold group">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-600 group-hover:bg-gradient-to-tr group-hover:from-amber-500 group-hover:via-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-semibold text-sm text-slate-900">Síguenos en Instagram</span>
+                        <span class="block text-[11px] text-slate-500">@macy.jeans</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-rosegold"></i>
+            </a>
+
+        </div>
+
+        <!-- Footer / Pie de Página -->
+        <footer class="mt-8 text-center pb-4">
+            <p class="text-[11px] tracking-widest text-slate-500 uppercase">© 2026 MA&CY JEANS. Todos los derechos reservados.</p>
+            <p class="text-[10px] text-rosegoldDark mt-1">Elegancia y Estilo en Cada Diseño</p>
+        </footer>
+
+    </main>
+
+    <!-- MODAL / VISOR DE CATÁLOGO INTEGRADO -->
+    <div id="catalogModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-fade-in border border-rosegold/30">
+            
+            <!-- Cabecera del Modal -->
+            <div class="px-6 py-4 bg-slate-900 text-white flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-gem text-rosegold"></i>
+                    <span class="font-serif font-bold tracking-wider text-lg">Catálogo Oficial MA&CY</span>
+                </div>
+                <button onclick="closeCatalogModal()" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-xmark text-white"></i>
+                </button>
+            </div>
+
+            <!-- Cuerpo del Visor -->
+            <div class="p-6 overflow-y-auto space-y-4">
+                <div class="text-center pb-2 border-b border-slate-100">
+                    <h3 class="font-serif font-bold text-xl text-slate-900">Colección PopSugar & Most Wanted</h3>
+                    <p class="text-xs text-slate-500 mt-1">Visualiza los detalles de modelos, tallajes y corridas directamente.</p>
+                </div>
+
+                <!-- Marco embebido o Visor simulado del PDF -->
+                <div class="bg-slate-100 rounded-xl p-4 text-center border border-slate-200">
+                    <div class="py-8 space-y-3">
+                        <i class="fa-regular fa-file-pdf text-4xl text-rosegold"></i>
+                        <p class="text-sm font-semibold text-slate-800">Catálogo de Pantalones de Mezclilla</p>
+                        <p class="text-xs text-slate-500">Disponible con especificaciones completas de corridas (Skinny, Wide Leg, Barrel, Balloon, Flare, etc.)</p>
+                        
+                        <div class="pt-2 flex flex-col sm:flex-row gap-2 justify-center">
+                            <a href="./catalogo jeans.pdf" target="_blank" class="px-4 py-2.5 bg-rosegold text-white text-xs font-medium rounded-lg hover:bg-rosegoldDark transition-colors inline-flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-external-link-alt"></i> Abrir en Pantalla Completa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumen rápido de marcas destacadas -->
+                <div class="grid grid-cols-2 gap-3 pt-2">
+                    <div class="glass-card p-3 rounded-xl text-center">
+                        <span class="block font-bold text-xs text-slate-900">POPSUGAR</span>
+                        <span class="text-[10px] text-slate-500">Skinny, Barrel, Wide Leg & Petite</span>
+                    </div>
+                    <div class="glass-card p-3 rounded-xl text-center">
+                        <span class="block font-bold text-xs text-slate-900">MOST WANTED</span>
+                        <span class="text-[10px] text-slate-500">Balloon, Flare B24, Palazzo & Straight</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pie del Modal -->
+            <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                <span class="text-[11px] text-slate-500">¿Dudas con una talla? Escríbenos al WhatsApp</span>
+                <button onclick="closeCatalogModal()" class="px-4 py-1.5 bg-slate-200 text-slate-700 text-xs font-medium rounded-lg hover:bg-slate-300 transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts para controlar el Modal -->
+    <script>
+        function openCatalogModal() {
+            document.getElementById('catalogModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCatalogModal() {
+            document.getElementById('catalogModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            const modal = document.getElementById('catalogModal');
+            if (event.target == modal) {
+                closeCatalogModal();
+            }
+        }
+    </script>
+</body>
+</html>
